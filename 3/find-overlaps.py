@@ -2,8 +2,6 @@
 
 CLOTH_LEN = 1000
 
-zero_to_ten_squared = [x * x for x in range(10)]
-
 def get_coords_for_claim(line):
     sections = line.split(' ')
     (x,y) = map(int, sections[2][0:-1].split(','))
