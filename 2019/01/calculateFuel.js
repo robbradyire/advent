@@ -6,7 +6,7 @@ const INPUT_PATH = 'input.txt';
 const simpleCalculateFuel = mass => Math.floor(mass / 3) - 2;
 
 const calculateFuel = mass => {
-  const requiredFuel = Math.floor(mass / 3) - 2;
+  const requiredFuel = simpleCalculateFuel(mass);
   return requiredFuel > 0 ? requiredFuel + calculateFuel(requiredFuel) : 0;
 };
 
